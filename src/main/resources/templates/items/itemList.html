@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>아이템리스트</title>
+</head>
+<body>
+
+<ol th:each="item : ${items}">
+    <li th:text="${item.title}"> <span th:text="${item.author}"></span> <span th:text="${item.price}"></span> <span th:text="${item.stockQuantity}"></span></li>
+</ol>
+</body>
+</html>
