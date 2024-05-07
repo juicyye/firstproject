@@ -8,8 +8,12 @@
 </head>
 <body>
 
-<ol th:each="order : ${orders}">
-    <li th:text="${order.member}"> <span th:text="${order.orderItems}"></span> </li>
-</ol>
+<tr th:each="order:${orders}">
+    <td th:text="${order.id}"></td>
+    <td th:text="${order.member.name}"></td>
+    <td th:text="${order.orderItems[0].item.title}"></td>
+    <td th:text="${order.orderItems[0].price}"></td>
+    <td th:text="${order.orderItems[0].count}"></td>
+</tr>
 </body>
 </html>

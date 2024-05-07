@@ -9,6 +9,7 @@ import kozin.first.domain.service.ItemService;
 import kozin.first.domain.service.MemberService;
 import kozin.first.domain.service.OrderService;
 import kozin.first.web.SessionConst;
+import kozin.first.web.form.MemberForm;
 import kozin.first.web.form.OrderForm;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

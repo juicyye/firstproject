@@ -11,4 +11,13 @@ public class MemberForm {
     private String loginId;
     @NotEmpty
     private String password;
+
+    public MemberForm(String name, String loginId, String password) {
+        this.name = name;
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    public MemberForm() {
+    }
 }

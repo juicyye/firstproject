@@ -16,8 +16,8 @@ public class OrderItem {
     @Column(name = "order_item_id")
     private Long id;
 
-    private int price;
-    private int count;
+    private Integer price;
+    private Integer count;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
     private Order order;
@@ -36,7 +36,7 @@ public class OrderItem {
     }
 
     //== 생성자 ==//
-    public static OrderItem createOrderItem(Item item, int price, int count) {
+    public static OrderItem createOrderItem(Item item, Integer price, Integer count) {
         OrderItem orderItem = new OrderItem();
         orderItem.setItem(item);
         orderItem.setPrice(price);
